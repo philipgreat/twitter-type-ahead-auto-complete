@@ -1,0 +1,34 @@
+
+/data/apache-tomcat-8.0.36/webapps/sm-shop/pages/shop/templates/bootstrap3/sections/navbar.jsp
+/data/apache-tomcat-8.0.36/webapps/sm-shop/pages/shop/templates/bootstrap3/pages/landing.jsp
+
+vi ./sm-shop/src/main/java/com/salesmanager/web/shop/controller/search/SearchController.java
+
+
+vi /data/apache-tomcat-8.0.36/webapps/sm-shop/pages/shop/templates/bootstrap3/sections/navbar.jsp
+vi /data/apache-tomcat-8.0.36/webapps/m/pages/shop/templates/bootstrap3/sections/
+curl "http://localhost:8080/sm-shop/services/public/search/default/zh/autocomplete.html?q=cck-8"navbar.jsp
+
+curl "http://localhost:8080/sm-shop/services/public/search/default/zh/autocomplete.html?q=cck-8"
+vi /data/shopizer/sm-shop/src/main/java/com/salesmanager/web/shop/controller/search/SearchController.java
+vi /data/shopizer/sm-core/src/main/java/com/salesmanager/core/business/search/service/SearchServiceImpl.java
+vi /data/shopizer/sm-shop/src/main/java/com/salesmanager/web/shop/model/search/AutoCompleteRequest.java
+
+vi /data/shopizer/m-sm-shop/src/main/java/com/salesmanager/web/shop/model/search/AutoCompleteRequest.java
+vi /data/shopizer/m-sm-shop/src/main/java/com/salesmanager/web/shop/controller/search/SearchController.java
+
+vi /data/shopizer/sm-search/src/com/shopizer/search/services/impl/SearchDelegateImpl.java
+
+mvn compile
+/data/apache-tomcat-8.0.36/bin/shutdown.sh
+/bin/cp -Rf /data/shopizer/sm-shop/target/classes/* /data/apache-tomcat-8.0.36/webapps/sm-shop/WEB-INF/classes/
+/bin/cp -Rf /data/shopizer/sm-search/target/classes/* /data/apache-tomcat-8.0.36/webapps/sm-shop/WEB-INF/classes/
+/bin/cp -Rf /data/shopizer/sm-core/target/classes/* /data/apache-tomcat-8.0.36/webapps/sm-shop/WEB-INF/classes/
+/bin/cp -Rf /data/shopizer/sm-core-model/target/classes/* /data/apache-tomcat-8.0.36/webapps/sm-shop/WEB-INF/classes/
+
+
+
+/bin/cp -Rf /data/shopizer/m-sm-shop/target/classes/* /data/apache-tomcat-8.0.36/webapps/m/WEB-INF/classes/
+/bin/cp -Rf /data/shopizer/sm-search/target/classes/* /data/apache-tomcat-8.0.36/webapps/m/WEB-INF/classes/
+/bin/cp -Rf /data/shopizer/sm-core/target/classes/* /data/apache-tomcat-8.0.36/webapps/m/WEB-INF/classes/
+/bin/cp -Rf /data/shopizer/sm-core-model/target/classes/* /data/apache-tomcat-8.0.36/webapps/m/WEB-INF/classes/
